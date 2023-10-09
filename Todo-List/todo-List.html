@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <input
+      placeholder="Enter the todo"
+      class="js-input-button"
+      onkeydown="enterButton(event)"
+    />
+    <button onclick="todoAdd()">Add</button>
+    <div class="js-display-todo-list"></div>
+
+    <!-- todo-List.js file linked in html page -->
+    <script src="todo-List.js"></script>
+  </body>
+</html>
