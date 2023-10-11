@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
+    <link rel="stylesheet" href="todo-List.css" />
   </head>
   <body>
     <h1>Todo List</h1>
-    <input
-      placeholder="Enter the todo"
-      class="js-input-button"
-      onkeydown="enterButton(event)"
-    />
-    <!-- due date input box -->
-    <input type="date" class="js-due-date-input" />
-    <button onclick="todoAdd()">Add</button>
-    <div class="js-display-todo-list"></div>
+    <div class="todo-input-grid">
+      <input
+        placeholder="Enter the todo"
+        class="js-input-button name-input"
+        onkeydown="enterButton(event)"
+      />
+      <!-- due date input box -->
+      <input type="date" class="js-due-date-input due-date-input" />
+      <button onclick="todoAdd()" class="add-todo-button">Add</button>
+    </div>
+    <div class="js-display-todo-list todo-grid"></div>
 
     <!-- todo-List.js file linked in html page -->
     <script src="todo-List.js"></script>
